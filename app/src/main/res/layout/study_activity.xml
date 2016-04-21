@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 勉強モード画面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="#1abc9c">
+
+        <Chronometer
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="65dp"
+            android:textColor="#ffffff"
+            android:id="@+id/time1"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <!-- ページ題名表示 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="長時間モード"
+            android:textColor="#ffffff"
+            android:id="@+id/textView9"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:textSize="40dp" />
+
+        <!-- キャンセルボタン表示 -->
+        <Button
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:text="キャンセル"
+            android:id="@+id/button4"
+            android:background="@drawable/button"
+            android:textColor="#1abc9c"
+            android:textSize="30dp"
+            android:layout_marginBottom="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

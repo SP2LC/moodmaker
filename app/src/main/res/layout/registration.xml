@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 色登録画面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#60C4B0">
+
+    <!--追加ボタン表示 -->
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="追加"
+        android:textColor="#ffffff"
+        android:background="#2c3e50"
+        android:textSize="20dp" />
+
+    <!-- リスト表示領域 -->
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:divider="#34495e"
+        android:dividerHeight="1dp"/>
+
+    <!-- 登録情報が無い場合のtext -->
+    <TextView
+        android:id="@+id/empty"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

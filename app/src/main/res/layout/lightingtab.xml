@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/test_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1abc9c"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="登録した色"
+            android:id="@+id/textView7"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="19dp"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="19dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:id="@+id/button6"
+            android:text="選択"
+            android:textColor="#1abc9c"
+            android:background="@drawable/button4"
+            android:layout_weight="0.5"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_alignTop="@+id/textView7"
+            android:layout_toRightOf="@+id/textView7"
+            android:layout_toEndOf="@+id/textView7" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="280dp"
+            android:layout_height="350dp"
+            android:background="@drawable/background"
+            android:layout_marginTop="31dp"
+            android:layout_below="@+id/textView7"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="赤"
+                android:id="@+id/textView3"
+                android:layout_alignParentTop="true"
+                android:textSize="30dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#e74c3c"
+                android:layout_marginTop="25dp" />
+
+            <!-- 赤 -->
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBar"
+                android:layout_below="@+id/textView3"
+                android:max="1024"
+                android:progressDrawable="@drawable/progress"
+                android:thumb="@drawable/thump"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp" />
+
+            <!-- 青SeekBar -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="青"
+                android:id="@+id/textView4"
+                android:layout_below="@+id/seekBar"
+                android:textSize="30dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#3498db"
+                android:layout_marginTop="5dp" />
+
+            <!-- 青SeekBar -->
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBar2"
+                android:progressDrawable="@drawable/progress2"
+                android:thumb="@drawable/thump2"
+                android:layout_below="@+id/textView4"
+                android:max="1024"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp" />
+
+            <!-- テキスト表示 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="緑"
+                android:id="@+id/textView5"
+                android:layout_below="@+id/seekBar2"
+
+                android:textSize="30dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#2ecc71"
+                android:layout_marginTop="5dp" />
+
+            <!-- 緑SeekBar -->
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBar3"
+                android:progressDrawable="@drawable/progress3"
+                android:thumb="@drawable/thump3"
+                android:layout_below="@+id/textView5"
+                android:max="1024"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
